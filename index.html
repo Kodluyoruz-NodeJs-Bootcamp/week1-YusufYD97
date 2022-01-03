@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="top">
+        <span>Draggable Boards</span>
+    </div>
+    
+    <div class="drag-container">
+        <div class="drag-list">
+            <div id="drag-from" class="drag-column drag-column-from" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+                <div class="drag-column-header">
+                    <h2>Drag from</h2>
+                </div>
+                <div class="drag-column-body"> 
+                    <div class="draggable-item" id="drag-item-1"draggable="true" ondragstart="onDragStart(event)"></div>
+                    <div class="draggable-item" id="drag-item-2"draggable="true" ondragstart="onDragStart(event)"></div>
+                    <div class="draggable-item" id="drag-item-3"draggable="true" ondragstart="onDragStart(event)"></div>
+                    <div class="draggable-item" id="drag-item-4"draggable="true" ondragstart="onDragStart(event)"></div>
+                    <div class="draggable-item" id="drag-item-5"draggable="true" ondragstart="onDragStart(event)"></div>
+                </div>
+            </div>
+            <div id="drag-to" class="drag-column drag-column-to" ondrop="onDrop(event)" ondragover="onDragOver(event)">
+                <div class="drag-column-header">
+                    <h2>Drag to</h2>
+                </div>
+                <div class="drag-column-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
